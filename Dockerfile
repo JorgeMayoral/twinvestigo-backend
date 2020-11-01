@@ -3,5 +3,5 @@ WORKDIR /app
 ADD requirements.txt ./
 RUN pip install -r requirements.txt
 EXPOSE 8000
-ADD ./app .
+ADD . .
 CMD uvicorn main:app --host 0.0.0.0 --port $PORT
