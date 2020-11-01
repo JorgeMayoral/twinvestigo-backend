@@ -49,8 +49,8 @@ class SearchParameters(BaseModel):
     username: Optional[str] = ""
     searchText: Optional[str] = ""
     city: Optional[str] = ""
-    since: Optiona[str] = ""
-    until: Optiona[str] = ""
+    since: Optional[str] = ""
+    until: Optional[str] = ""
 
 
 @app.get("/")
