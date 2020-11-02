@@ -21,7 +21,7 @@ def searchTweets(username, search, city, since, until):
         c.Near = city
     if since != "":
         c.Since = since
-    if until != until:
+    if until != "":
         c.Until = until
 
     if LIMIT > 0:
